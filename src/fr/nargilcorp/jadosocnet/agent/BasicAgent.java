@@ -9,6 +9,11 @@ package fr.nargilcorp.jadosocnet.agent;
  *
  * @author antony
  */
-public interface AgentInterface {
+public class BasicAgent extends AbstractAgent implements Runnable{
+
+    @Override
+    protected void alive() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
