@@ -5,7 +5,7 @@
  */
 package fr.nargilcorp.jadosocnet.rmi;
 
-import fr.nargilcorp.jadosocnet.agent.Kernel;
+import fr.nargilcorp.jadosocnet.kernel.Kernel;
 import java.rmi.registry.Registry;
 
 /**

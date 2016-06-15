@@ -18,7 +18,7 @@ public class KernelClient {
     public static void main(String[] argv) {
         try {
             KernelInterface hello = (KernelInterface) Naming.lookup("//localhost/Kernel");
-            hello.requestRole("com", "com", "com", new BasicAgent());
+            //hello.requestRole("com", "com", "com", new BasicAgent());
             System.out.println(Arrays.toString(hello.getAllAgent()));
         } catch (Exception e) {
             System.out.println("KernelCLient exception: " + e);

@@ -5,15 +5,27 @@
  */
 package fr.nargilcorp.jadosocnet.agent;
 
+import fr.nargilcorp.jadosocnet.message.StringMessage;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author antony
  */
-public class BasicAgent extends AbstractAgent implements Runnable{
+public class BasicAgent extends AbstractAgent implements Runnable {
 
     @Override
     protected void alive() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        requestRole("test", "test", "test");
+        try {
+            StringMessage message = (StringMessage) waitMessage();
+            System.out.println("nouveau message : " + message.getContent());
+            sendMessage(message.getSender(), new StringMessage("je te répond"));
+            Thread.sleep(5000);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(BasicAgent.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
-    
+
 }

@@ -3,15 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fr.nargilcorp.jadosocnet.agent;
+package fr.nargilcorp.jadosocnet.kernel;
 
+import fr.nargilcorp.jadosocnet.agent.AdresseAgent;
 import java.util.LinkedList;
 
 /**
  *
  * @author antony
  */
-public class Role extends LinkedList<AbstractAgent>{
+public class Role extends LinkedList<AdresseAgent>{
     private String nom;
     private Kernel kernelMaitre;
     
