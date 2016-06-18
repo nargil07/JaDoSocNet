@@ -7,8 +7,8 @@ package fr.nargilcorp.jadosocnet.agent;
 
 import fr.nargilcorp.jadosocnet.kernel.Kernel;
 import fr.nargilcorp.jadosocnet.message.ObjectMessage;
-import fr.nargilcorp.jadosocnet.rmi.JavaProcess;
-import fr.nargilcorp.jadosocnet.rmi.KernelInterface;
+import fr.nargilcorp.jadosocnet.kernel.JavaProcess;
+import fr.nargilcorp.jadosocnet.kernel.KernelInterface;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fr.nargilcorp.jadosocnet.rmi;
+package fr.nargilcorp.jadosocnet.kernel;
 
 import fr.nargilcorp.jadosocnet.agent.AdresseAgent;
 import fr.nargilcorp.jadosocnet.message.ObjectMessage;

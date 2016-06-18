@@ -7,7 +7,6 @@ package fr.nargilcorp.jadosocnet.kernel;
 
 import fr.nargilcorp.jadosocnet.message.ObjectMessage;
 import fr.nargilcorp.jadosocnet.agent.AdresseAgent;
-import fr.nargilcorp.jadosocnet.rmi.KernelInterface;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
